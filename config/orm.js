@@ -57,7 +57,7 @@ var orm = {
         // database query
         connection.query(queryString, function(err, results) {
             if(err) {throw err;}
-            cb(result);
+            cb(results);
         });
     }
 };
