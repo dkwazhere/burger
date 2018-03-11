@@ -1,6 +1,10 @@
+<img src="http://us.pressfrom.com/upload/images/real/2017/08/01/the-biggest-burger-in-the-world-is-1-774-pounds-and-ready-for-you-to-order-at-this-restaurant__943017_.jpg">
 <h1>Eat That burger</h1>
 
 <div class="container">
+    <div id="availableheader">
+        Burgers available to eat..
+    </div>
     <div class="row">
         <div class="col s6">
             {{#each burgers}}
@@ -13,20 +17,19 @@
                 {{/unless}}
             {{/each}}
         </div>
+        <div class="col s6">
+            <div id="eatenheader">Eaten Burgers</div>
+            {{#each burgers}}
+                {{#if this.devoured}}
+                    <div class="eatenBurger">
+                        <div>
+                            {{this.burger_name}}
+                        </div>
+                    </div>
+                {{/if}}
+            {{/each}}
+        </div>
     </div>
-</div>
-
-
-<div class="col s6">
-    {{#each burgers}}
-        {{#if this.devoured}}
-            <div class="eatenBurger">
-                <div>
-                    {{this.burger_name}}
-                </div>
-            </div>
-        {{/if}}
-    {{/each}}
 </div>
 
 <h2>Add your Burger</h2>

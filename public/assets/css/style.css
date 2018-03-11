@@ -1,0 +1,22 @@
+html {
+    background-color: gray;
+}
+
+body {
+    width: 80%;
+}
+
+#eatenheader {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+#availableheader {
+    font-size: 28px;
+    text-decoration: underline;
+    padding-top: 5%;
+}
+
+h1 {
+    float: right;
+}
